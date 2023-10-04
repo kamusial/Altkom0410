@@ -35,3 +35,9 @@ model = LinearRegression()   #wybieram algorytm
 model.fit(df[ ['Height', 'Gender'] ], df['Weight'] )   #policz
 print(model.coef_, model.intercept_)
 print('wzór: Height * ',model.coef_[0], '+ Gender * ',model.coef_[1],' = Weight')
+
+X = [40, 120]
+Y = [model.coef_[0]*i + model.coef_[1]*i + model.intercept_ for i in X]
+plt.plot(X, Y)
+plt.show()
+
