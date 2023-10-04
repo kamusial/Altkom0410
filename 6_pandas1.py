@@ -22,5 +22,16 @@ print(df.head(8))
 # sns.histplot(df.query("Gender=='Female'").Weight)
 # plt.show()
 
-sns.histplot(df, x=df.Weight, hue='Gender', element='poly')  #bars, step
-plt.show()
+# sns.histplot(df, x=df.Weight, hue='Gender', element='poly')  #bars, step
+# plt.show()
+
+df = pd.get_dummies(df)   #zmiana na dane numeryczne
+print(df)
+del(df['Gender_Male'])
+df.rename(columns={'Gender_Female': 'Gender'}, inplace=True)
+print(df)
+
+model = LinearRegression()   #wybieram algorytm
+model.fit(df[ ['Height', 'Gender'] ], df['Weight'] )   #policz
+print(model.coef_, model.intercept_)
+print('wzór: Height * ',model.coef_[0], '+ Gender * ',model.coef_[1],' = Weight')
