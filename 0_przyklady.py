@@ -32,3 +32,19 @@ print(dane2)
 dane3 = []
 dane3 = [i*i if i % 2 == 0 else 0 for i in range(5, 54, 3)]
 print(dane3)
+
+
+lista1 = [1, 2, 3, 'mama']
+lista2 = ['mama', 'pies', 44.5]
+lista3 = lista1 + lista2
+print(lista3)
+lista4 = lista1
+print(lista4)
+
+for i in range(len(lista2)):
+    if lista1[i] == 'kot':
+        print('znalazlem kota')
+
+for slowo in lista1:
+    if slowo == 'kot':
+        print('znalazlem kota')
