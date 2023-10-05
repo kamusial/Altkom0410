@@ -48,3 +48,14 @@ for i in range(len(lista2)):
 for slowo in lista1:
     if slowo == 'kot':
         print('znalazlem kota')
+
+print('mama'.upper())
+string = 'piesek'
+print(string.replace('e','E', 1))
+
+string2 = 'mama tata pies i kot'
+lista_czlonkow_rodziny = string2.split()
+print(lista_czlonkow_rodziny)
+
+# x = input('Wpisz imiona i rozdziel spacja ')
+# x = x.split()
