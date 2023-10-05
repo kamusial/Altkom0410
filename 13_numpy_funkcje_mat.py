@@ -26,3 +26,13 @@ np.ceil(a) #w górę
 # np.var(a) - wariancja elementów tablicy a
 # np.min(a), np.max(a) - minimum i maksimum z elementów tablicy a
 # np.argmin(a), np.argmax(a) - indeks wartości minimalnej i maksymalnej w tablicy a
+
+# rozklad statystyczny
+mu = 3
+sigma = 0.5
+N =10
+
+X = np.random.normal(mu, sigma, N)
+
+print(X)
+print(np.mean(X), np.median(X), np.std(X), np.var(X), np.min(X), np.max(X))
