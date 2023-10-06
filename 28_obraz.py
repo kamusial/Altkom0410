@@ -5,7 +5,7 @@ image = mpimg.imread('C:\\Users\\musiakam\\Desktop\\Firma\\6. Altkom\\4. Python 
 
 plt.imshow(image)
 plt.show()
-plt.imsave('zapisany.png', image, format = 'png')
+plt.imsave('zapisany.png', image, format='png')
 
 
 
