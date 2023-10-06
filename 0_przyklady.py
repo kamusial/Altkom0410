@@ -59,3 +59,21 @@ print(lista_czlonkow_rodziny)
 
 # x = input('Wpisz imiona i rozdziel spacja ')
 # x = x.split()
+
+def czy_dobra_kondycja(wzrost, waga, kolor_oczu = 'niebieskie'):
+    if waga/wzrost**2 < 25:
+        return True
+    return False
+
+def przedstaw_sie(imie, mail):
+    print(f'czesc {imie}')
+    print(f'wysylam maila na {mail}')
+
+if czy_dobra_kondycja(1.7, 62):
+    print('ok')
+
+
+string = 'mamusia'
+
+
+
